@@ -1,5 +1,8 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+
 <tv generator-info-name="EPG Generator (GitHub Actions)">
+
   <channel id="dummy-11855">
     <display-name>UEFA Conference League: AEK Larnaca vs Crystal Palace</display-name>
     <display-name>Paramount+</display-name>
@@ -65,15 +68,15 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11871">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11872">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11873">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11874">
@@ -81,19 +84,19 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11875">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11876">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11877">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11878">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11879">
@@ -101,23 +104,23 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11880">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11881">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11882">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11883">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11884">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11885">
@@ -129,31 +132,31 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11887">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11888">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11889">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11890">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11891">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11892">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11893">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11894">
@@ -161,15 +164,15 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11895">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11896">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11897">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11898">
@@ -181,19 +184,19 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11900">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11901">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11902">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11903">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11904">
@@ -201,39 +204,39 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11905">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11906">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11907">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11908">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11909">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11910">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11911">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11912">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11913">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11914">
@@ -241,103 +244,103 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11915">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11916">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11917">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11918">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11919">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11920">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11921">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11922">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11923">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11924">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11925">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11926">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11927">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11928">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11929">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11930">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11931">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11932">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11933">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11934">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11935">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11936">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11937">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11938">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11939">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11940">
@@ -345,61 +348,62 @@
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11941">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11942">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11943">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11944">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11945">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11946">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11947">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11948">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11949">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11950">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11951">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11952">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11953">
-    <display-name/>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11954">
     <display-name>Paramount+ 100</display-name>
     <display-name>Paramount+</display-name>
   </channel>
+
   <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11855">
     <title lang="en">UEFA Conference League: AEK Larnaca vs Crystal Palace</title>
     <desc lang="en">UEFA Conference League: AEK Larnaca vs Crystal Palace — Paramount+</desc>
@@ -560,4 +564,5 @@
     <desc lang="en">UEFA Conference League: Strasbourg vs Rijeka has finished.</desc>
     <category lang="en">Sports</category>
   </programme>
+
 </tv>
