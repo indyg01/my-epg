@@ -1,0 +1,72 @@
+name: Generate EPG
+
+on:
+  schedule:
+    # Runs every 6 hours automatically. To change frequency:
+    #   "0 */6 * * *"   = every 6 hours
+    #   "0 */12 * * *"  = every 12 hours
+    #   "0 6,18 * * *"  = 6am and 6pm UTC daily
+    - cron: "0 */6 * * *"
+
+  # Lets you trigger manually from the Actions tab at any time
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to commit EPG.xml back to the repo
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run EPG generator
+        env:
+          # ── Required ──────────────────────────────────────────────────────
+          # Your playlist URL — stored as a secret in repo Settings
+          M3U_URL: ${{ secrets.M3U_URL }}
+
+          # ── Categories ────────────────────────────────────────────────────
+          # Comma-separated. Must match group-title in your M3U (case-insensitive).
+          # To add more later just edit this line — no Python changes needed.
+          # Examples:
+          #   "paramount+"
+          #   "paramount+,sky sports"
+          #   "paramount+,sky sports,bein sports,espn,tsn"
+          EPG_CATEGORIES: "paramount+"
+
+          # ── Timezone ──────────────────────────────────────────────────────
+          # Your UTC offset in hours.
+          # Surrey BC: -7 in summer (PDT), -8 in winter (PST)
+          TZ_OFFSET_HOURS: "-7"
+
+          # ── Event settings ────────────────────────────────────────────────
+          # Default event length in minutes when no end time is in the channel name
+          DEFAULT_DURATION_MIN: "120"
+
+          # How long the "Event ended" message shows after the event finishes
+          ENDED_DURATION_MIN: "180"
+
+          # The message shown in the EPG after an event finishes
+          ENDED_MESSAGE: "Event ended"
+
+          # ── Output ────────────────────────────────────────────────────────
+          EPG_OUTPUT: "EPG.xml"
+
+        run: python epg_generator.py
+
+      - name: Commit and push EPG.xml
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add EPG.xml
+          # Only commits if EPG.xml actually changed — skips empty commits
+          git diff --staged --quiet || git commit -m "chore: update EPG [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
