@@ -21,8 +21,7 @@ import os
 import sys
 import urllib.request
 from datetime import datetime, timedelta
-from xml.etree.ElementTree import Element, SubElement, tostring
-from xml.dom import minidom
+
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -518,17 +517,39 @@ def fmt_xmltv(dt: datetime) -> str:
 
 
 def build_xmltv(events: list[dict]) -> str:
-    tv = Element("tv", attrib={"generator-info-name": "EPG Generator (GitHub Actions)"})
+    """
+    Build a standards-compliant XMLTV file as a plain string.
+    Each event gets a timed programme block + an 'Event ended' follow-up block.
+    """
 
-    seen: set[str] = set()
+    def esc(s: str) -> str:
+        return (str(s)
+                .replace('&', '&amp;')
+                .replace('<', '&lt;')
+                .replace('>', '&gt;')
+                .replace('"', '&quot;'))
+
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
+        '',
+        '<tv generator-info-name="EPG Generator (GitHub Actions)">',
+        '',
+    ]
+
+    # Channel definitions
+    seen_ch: set[str] = set()
     for ev in events:
-        if ev["ch_id"] not in seen:
-            seen.add(ev["ch_id"])
-            ch_el = SubElement(tv, "channel", id=ev["ch_id"])
-            SubElement(ch_el, "display-name").text = ev["title"][:60]
-            if ev["source"]:
-                SubElement(ch_el, "display-name").text = ev["source"]
+        if ev["ch_id"] not in seen_ch:
+            seen_ch.add(ev["ch_id"])
+            lines.append(f'  <channel id="{esc(ev["ch_id"])}">')
+            lines.append(f'    <display-name>{esc(ev["title"][:60])}</display-name>')
+            if ev.get("source"):
+                lines.append(f'    <display-name>{esc(ev["source"])}</display-name>')
+            lines.append('  </channel>')
+    lines.append('')
 
+    # Programme entries
     for ev in events:
         if not ev["start_utc"]:
             print(f"  [SKIP ] No time — skipping: {ev['raw'][:65]}")
@@ -538,27 +559,25 @@ def build_xmltv(events: list[dict]) -> str:
         ended_stop = stop_utc        + timedelta(minutes=ENDED_DURATION_MIN)
 
         # Main event block
-        prog = SubElement(tv, "programme", attrib={
-            "start":   fmt_xmltv(ev["start_utc"]),
-            "stop":    fmt_xmltv(stop_utc),
-            "channel": ev["ch_id"],
-        })
-        SubElement(prog, "title",    lang="en").text = ev["title"]
-        SubElement(prog, "desc",     lang="en").text = ev["title"] + (f" — {ev['source']}" if ev["source"] else "")
-        SubElement(prog, "category", lang="en").text = "Sports"
+        lines.append(f'  <programme start="{fmt_xmltv(ev["start_utc"])}" stop="{fmt_xmltv(stop_utc)}" channel="{esc(ev["ch_id"])}">')
+        lines.append(f'    <title lang="en">{esc(ev["title"])}</title>')
+        desc = ev["title"] + (f' — {ev["source"]}' if ev.get("source") else "")
+        lines.append(f'    <desc lang="en">{esc(desc)}</desc>')
+        lines.append( '    <category lang="en">Sports</category>')
+        lines.append( '  </programme>')
 
         # Event ended block
-        ended = SubElement(tv, "programme", attrib={
-            "start":   fmt_xmltv(stop_utc),
-            "stop":    fmt_xmltv(ended_stop),
-            "channel": ev["ch_id"],
-        })
-        SubElement(ended, "title",    lang="en").text = ENDED_MESSAGE
-        SubElement(ended, "desc",     lang="en").text = f"{ev['title']} has finished."
-        SubElement(ended, "category", lang="en").text = "Sports"
+        lines.append(f'  <programme start="{fmt_xmltv(stop_utc)}" stop="{fmt_xmltv(ended_stop)}" channel="{esc(ev["ch_id"])}">')
+        lines.append(f'    <title lang="en">{esc(ENDED_MESSAGE)}</title>')
+        lines.append(f'    <desc lang="en">{esc(ev["title"])} has finished.</desc>')
+        lines.append( '    <category lang="en">Sports</category>')
+        lines.append( '  </programme>')
 
-    raw_xml = tostring(tv, encoding="unicode")
-    return minidom.parseString(raw_xml).toprettyxml(indent="  ", encoding=None)
+    lines.append('')
+    lines.append('</tv>')
+    return '\n'.join(lines)
+
+
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
