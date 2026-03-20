@@ -2,67 +2,67 @@
 <tv generator-info-name="EPG Generator (GitHub Actions)">
 
   <channel id="dummy-11855">
-    <display-name>UEFA Conference League: AEK Larnaca vs Crystal Palace</display-name>
+    <display-name>Serie A: Cagliari vs Napoli</display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11856">
-    <display-name>UEFA Europa League: Midtjylland vs Nottingham Forest</display-name>
+    <display-name>Serie A: Genoa vs Udinese</display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11857">
-    <display-name>UEFA Europa League: The Golazo Show</display-name>
+    <display-name>Scottish Professional Football League: Partick Thistle vs St</display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11858">
-    <display-name>UEFA Conference League: Raków vs Fiorentina</display-name>
+    <display-name>English Football League: Preston North End vs Stoke City</display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11859">
-    <display-name>UEFA Europa League: Lyon vs Celta</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11860">
-    <display-name>UEFA Conference League: Mainz vs Sigma Olomouc</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11861">
-    <display-name>UEFA Europa League: Freiburg vs Genk</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11862">
-    <display-name>UEFA Conference League: AEK Athens vs Celje</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11863">
-    <display-name>UEFA Europa League: Aston Villa vs Lille</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11864">
-    <display-name>UEFA Conference League: Rayo Vallecano vs Samsunspor</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11865">
-    <display-name>UEFA Europa League: Roma vs Bologna</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11866">
-    <display-name>UEFA Conference League: Shakhtar Donetsk vs Lech Poznań</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11867">
-    <display-name>UEFA Europa League: Porto vs Stuttgart</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11868">
-    <display-name>UEFA Conference League: Sparta Praha vs AZ Alkmaar</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11869">
-    <display-name>UEFA Europa League: Real Betis vs Panathinaikos</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11870">
-    <display-name>UEFA Conference League: Strasbourg vs Rijeka</display-name>
+    <display-name></display-name>
     <display-name>Paramount+</display-name>
   </channel>
   <channel id="dummy-11871">
@@ -402,164 +402,44 @@
     <display-name>Paramount+</display-name>
   </channel>
 
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11855">
-    <title lang="en">UEFA Conference League: AEK Larnaca vs Crystal Palace</title>
-    <desc lang="en">UEFA Conference League: AEK Larnaca vs Crystal Palace — Paramount+</desc>
+  <programme start="20260320202000 +0000" stop="20260320222000 +0000" channel="dummy-11855">
+    <title lang="en">Serie A: Cagliari vs Napoli</title>
+    <desc lang="en">Serie A: Cagliari vs Napoli — Paramount+</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11855">
+  <programme start="20260320222000 +0000" stop="20260321012000 +0000" channel="dummy-11855">
     <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: AEK Larnaca vs Crystal Palace has finished.</desc>
+    <desc lang="en">Serie A: Cagliari vs Napoli has finished.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11856">
-    <title lang="en">UEFA Europa League: Midtjylland vs Nottingham Forest</title>
-    <desc lang="en">UEFA Europa League: Midtjylland vs Nottingham Forest — Paramount+</desc>
+  <programme start="20260320223500 +0000" stop="20260321003500 +0000" channel="dummy-11856">
+    <title lang="en">Serie A: Genoa vs Udinese</title>
+    <desc lang="en">Serie A: Genoa vs Udinese — Paramount+</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11856">
+  <programme start="20260321003500 +0000" stop="20260321033500 +0000" channel="dummy-11856">
     <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Midtjylland vs Nottingham Forest has finished.</desc>
+    <desc lang="en">Serie A: Genoa vs Udinese has finished.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11857">
-    <title lang="en">UEFA Europa League: The Golazo Show</title>
-    <desc lang="en">UEFA Europa League: The Golazo Show — Paramount+</desc>
+  <programme start="20260320224000 +0000" stop="20260321004000 +0000" channel="dummy-11857">
+    <title lang="en">Scottish Professional Football League: Partick Thistle vs St Johnstone</title>
+    <desc lang="en">Scottish Professional Football League: Partick Thistle vs St Johnstone — Paramount+</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11857">
+  <programme start="20260321004000 +0000" stop="20260321034000 +0000" channel="dummy-11857">
     <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: The Golazo Show has finished.</desc>
+    <desc lang="en">Scottish Professional Football League: Partick Thistle vs St Johnstone has finished.</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11858">
-    <title lang="en">UEFA Conference League: Raków vs Fiorentina</title>
-    <desc lang="en">UEFA Conference League: Raków vs Fiorentina — Paramount+</desc>
+  <programme start="20260320225000 +0000" stop="20260321005000 +0000" channel="dummy-11858">
+    <title lang="en">English Football League: Preston North End vs Stoke City</title>
+    <desc lang="en">English Football League: Preston North End vs Stoke City — Paramount+</desc>
     <category lang="en">Sports</category>
   </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11858">
+  <programme start="20260321005000 +0000" stop="20260321035000 +0000" channel="dummy-11858">
     <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Raków vs Fiorentina has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11859">
-    <title lang="en">UEFA Europa League: Lyon vs Celta</title>
-    <desc lang="en">UEFA Europa League: Lyon vs Celta — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11859">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Lyon vs Celta has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11860">
-    <title lang="en">UEFA Conference League: Mainz vs Sigma Olomouc</title>
-    <desc lang="en">UEFA Conference League: Mainz vs Sigma Olomouc — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11860">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Mainz vs Sigma Olomouc has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11861">
-    <title lang="en">UEFA Europa League: Freiburg vs Genk</title>
-    <desc lang="en">UEFA Europa League: Freiburg vs Genk — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11861">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Freiburg vs Genk has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319200000 +0000" stop="20260319220000 +0000" channel="dummy-11862">
-    <title lang="en">UEFA Conference League: AEK Athens vs Celje</title>
-    <desc lang="en">UEFA Conference League: AEK Athens vs Celje — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319220000 +0000" stop="20260320010000 +0000" channel="dummy-11862">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: AEK Athens vs Celje has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11863">
-    <title lang="en">UEFA Europa League: Aston Villa vs Lille</title>
-    <desc lang="en">UEFA Europa League: Aston Villa vs Lille — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11863">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Aston Villa vs Lille has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11864">
-    <title lang="en">UEFA Conference League: Rayo Vallecano vs Samsunspor</title>
-    <desc lang="en">UEFA Conference League: Rayo Vallecano vs Samsunspor — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11864">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Rayo Vallecano vs Samsunspor has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11865">
-    <title lang="en">UEFA Europa League: Roma vs Bologna</title>
-    <desc lang="en">UEFA Europa League: Roma vs Bologna — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11865">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Roma vs Bologna has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11866">
-    <title lang="en">UEFA Conference League: Shakhtar Donetsk vs Lech Poznań</title>
-    <desc lang="en">UEFA Conference League: Shakhtar Donetsk vs Lech Poznań — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11866">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Shakhtar Donetsk vs Lech Poznań has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11867">
-    <title lang="en">UEFA Europa League: Porto vs Stuttgart</title>
-    <desc lang="en">UEFA Europa League: Porto vs Stuttgart — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11867">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Porto vs Stuttgart has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11868">
-    <title lang="en">UEFA Conference League: Sparta Praha vs AZ Alkmaar</title>
-    <desc lang="en">UEFA Conference League: Sparta Praha vs AZ Alkmaar — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11868">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Sparta Praha vs AZ Alkmaar has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11869">
-    <title lang="en">UEFA Europa League: Real Betis vs Panathinaikos</title>
-    <desc lang="en">UEFA Europa League: Real Betis vs Panathinaikos — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11869">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Europa League: Real Betis vs Panathinaikos has finished.</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260319225000 +0000" stop="20260320005000 +0000" channel="dummy-11870">
-    <title lang="en">UEFA Conference League: Strasbourg vs Rijeka</title>
-    <desc lang="en">UEFA Conference League: Strasbourg vs Rijeka — Paramount+</desc>
-    <category lang="en">Sports</category>
-  </programme>
-  <programme start="20260320005000 +0000" stop="20260320035000 +0000" channel="dummy-11870">
-    <title lang="en">Event ended</title>
-    <desc lang="en">UEFA Conference League: Strasbourg vs Rijeka has finished.</desc>
+    <desc lang="en">English Football League: Preston North End vs Stoke City has finished.</desc>
     <category lang="en">Sports</category>
   </programme>
 
