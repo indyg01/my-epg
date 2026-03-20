@@ -531,8 +531,6 @@ def build_xmltv(events: list[dict]) -> str:
 
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
-        '',
         '<tv generator-info-name="EPG Generator (GitHub Actions)">',
         '',
     ]
@@ -634,9 +632,11 @@ def main():
     print(f"\nSummary: {ok} OK  |  {warn} review  |  {err} no data  |  {skipped} skipped")
 
     xml_str = build_xmltv(events)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(xml_str)
-    print(f"\nWritten: {OUTPUT_FILE} ({len(xml_str)/1024:.1f} KB)")
+    # Strip any trailing whitespace from each line and ensure single trailing newline
+    clean = '\n'.join(line.rstrip() for line in xml_str.splitlines()) + '\n'
+    with open(OUTPUT_FILE, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(clean)
+    print(f"\nWritten: {OUTPUT_FILE} ({len(clean)/1024:.1f} KB)")
     print("Done.")
 
 
