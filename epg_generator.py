@@ -530,8 +530,8 @@ def build_xmltv(events: list[dict]) -> str:
                 .replace('"', '&quot;'))
 
     lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        '<tv generator-info-name="EPG Generator (GitHub Actions)">',
+        '<?xml version="1.0" encoding="UTF-8" ?>',
+        '<tv generator-info-name="EPG Generator" generator-info-url="none">',
         '',
     ]
 
@@ -615,21 +615,39 @@ def main():
 
     print("\nParsing channel names:")
     events = []
+    skipped_blank = 0
     for idx, ch in enumerate(matched, start=1):
+        # Skip channels with blank or useless names
+        raw_name = ch["name"].strip()
+        if not raw_name or len(raw_name) < 4:
+            skipped_blank += 1
+            continue
+
         cat = ch.get("matched_category", categories[0])
-        ev  = parse_channel_name(ch["name"], idx, user_tz, cat)
+        ev  = parse_channel_name(raw_name, idx, user_tz, cat)
         if ch.get("tvg_id"):
             ev["ch_id"] = ch["tvg_id"]
+
+        # Skip if title is blank after cleaning
+        if not ev["title"] or len(ev["title"]) < 3:
+            skipped_blank += 1
+            print(f"  [SKIP ] Blank title: {raw_name[:60]}")
+            continue
+
+        # Skip if no start time could be parsed
+        if not ev["start_utc"]:
+            print(f"  [SKIP ] No time:     {raw_name[:60]}")
+            skipped_blank += 1
+            continue
+
         events.append(ev)
-        time_str = ev["start_utc"].strftime("%Y-%m-%d %H:%M UTC") if ev["start_utc"] else "no time found"
+        time_str = ev["start_utc"].strftime("%Y-%m-%d %H:%M UTC")
         print(f"  [{ev['confidence'].upper():4}] {ev['title'][:52]}")
         print(f"         @ {time_str}")
 
-    ok      = sum(1 for e in events if e["confidence"] == "ok")
-    warn    = sum(1 for e in events if e["confidence"] == "warn")
-    err     = sum(1 for e in events if e["confidence"] == "err")
-    skipped = sum(1 for e in events if not e["start_utc"])
-    print(f"\nSummary: {ok} OK  |  {warn} review  |  {err} no data  |  {skipped} skipped")
+    ok   = sum(1 for e in events if e["confidence"] == "ok")
+    warn = sum(1 for e in events if e["confidence"] == "warn")
+    print(f"\nSummary: {ok} OK  |  {warn} review  |  {skipped_blank} skipped  |  {len(events)} written to EPG")
 
     xml_str = build_xmltv(events)
     # Strip any trailing whitespace from each line and ensure single trailing newline
