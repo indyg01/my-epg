@@ -518,8 +518,8 @@ def fmt_xmltv(dt: datetime) -> str:
 
 def build_xmltv(events: list[dict]) -> str:
     """
-    Build a standards-compliant XMLTV file as a plain string.
-    Each event gets a timed programme block + an 'Event ended' follow-up block.
+    Build a standards-compliant XMLTV file matching the exact format
+    IPTV Editor expects, based on a known-working EPG structure.
     """
 
     def esc(s: str) -> str:
@@ -531,20 +531,20 @@ def build_xmltv(events: list[dict]) -> str:
 
     lines = [
         '<?xml version="1.0" encoding="UTF-8" ?>',
-        '<tv generator-info-name="EPG Generator" generator-info-url="none">',
+        '<tv generator-info-name="none" generator-info-url="none">',
         '',
     ]
 
-    # Channel definitions
+    # Channel definitions — match exact structure of working EPG
     seen_ch: set[str] = set()
     for ev in events:
         if ev["ch_id"] not in seen_ch:
             seen_ch.add(ev["ch_id"])
             lines.append(f'  <channel id="{esc(ev["ch_id"])}">')
-            lines.append(f'    <display-name>{esc(ev["title"][:60])}</display-name>')
-            if ev.get("source"):
-                lines.append(f'    <display-name>{esc(ev["source"])}</display-name>')
-            lines.append('  </channel>')
+            lines.append(f'    <icon src="" />')
+            lines.append(f'    <url>http://none</url>')
+            lines.append(f'    <display-name lang="en">{esc(ev["title"][:60])}</display-name>')
+            lines.append(f'  </channel>')
     lines.append('')
 
     # Programme entries
